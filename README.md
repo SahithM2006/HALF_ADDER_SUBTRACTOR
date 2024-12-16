@@ -62,9 +62,25 @@ Developed by: SAHITH M
 RegisterNumber: 24000251
 
 **RTL Schematic**
-HALF ADDER
-![ex3 (2)(1)](https://github.com/user-attachments/assets/ab41be22-0d86-438b-a901-241b878ff6c5)
 
+**HALF ADDER**
+```
+module halfadder (a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum= (a ^ b);
+assign carry= (a & b);
+endmodule
+```
+***HALF SUBTRACTOR***
+```
+module (ha a,b,diff,borr;
+input a,b;
+output diff,borr;
+assign diff=(a^b);
+assign borr=(`a&b);
+endmodule
+```
 HALF SUBTRACTOR
 ![ex3 (2)(2) jpg](https://github.com/user-attachments/assets/fed71a2a-3845-4297-b718-da2729e364c0)
 
